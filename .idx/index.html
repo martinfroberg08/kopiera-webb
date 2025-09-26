@@ -3,34 +3,132 @@
  <head>
    <meta charset="U TF-8">
 <title>Café Mysigt</title>
+<style>
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;  
+    }
+    header{
+        background-color: #8b5e3c ;
+        color: #fff;
+        padding: 1rem;
+    }
+    .nav-header nav ul {
+        list-style: none;
+        display: flex;
+       gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-header a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+    .nav-header a:hover {
+        color: #f0d9b5;
+    }
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #8b5e3c;
+    }
+    .menu-list li, .bakverk-list li {
+        list-style: none;
+        margin-bottom: 0.5rem;
+    }
+    .menu-list, .bakverk-list .hours-list {
+        margin-top: o,5rem;
+        list-style: none;
+        padding-left: 0;
+
+    }
+    footer {
+        background-color: #8b5e3c;
+        padding: 1rem;
+        color: #fff;
+        text-align: center;
+
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+</style>
  </head>
-    <header class="nav-header">
-        <nav>
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="#Meny">Meny</a></li>
-                <li class="nav-li"><a href="#Opening-hours">Öppettider</a></li>
-                <li class="nav-li"><a href="#find-here">Hitta hit</a></li>
-                <li class="nav-li"><a href="#contact">Kontakt</a></li>
-                <li class="nav-li"><a href="#about-me">om oss</a></li>
-            </ul>
+ <body>
+    <heder class-"nav-header">
+        <nav aria-label="Huvudmeny">
+        <ul>
+            <li><a href="#om-oss">Om #om-oss</a></li>
+            <li><a href="#meny"></a>Meny</li>
+            <li><a href="#bakverk"></a>bakverk</li>
+            <li><a href="oppettider"></a>Öppettider</li>
+            <li><a href="#kontakta-oss">kontakt</a></li>
+        </ul>
         </nav>
-</header>
+    </heder>
+    <main>
+        <section id="om-oss">
+            <h2>Om oss</h2>
+            <p>Välkommen till Cafe Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat färdigbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär och vänlig service.</p>
+        </section>
 
-<main>
-    <section class="meny" id="meny">
-        <h2>Meny</h2>
-        <h3>Drycker</h3>
-        <h3>Alla våra drycker bryggs med kärlek</h3>
-        <p>Vi erbjuder ett brett utbud av drycker för alla smaker och tillfällen.
+        <section id="meny">
+            <h2>Vår Meny - Drycker</h2>
+            <ul class="menu-list">
+                <li>kaffe - 35 kr</li>
+                <li>Cappuccino - 45Kr</li>
+                <li>Te (olika sorter) - 30 kr</li>
+                <li>Varm choklad - 40Kr</li>
+        </section>
+        
+        <section id="bakverk">
+            <h2>Färskt från bageriet - bakverk</h2>
+            <p>Bakat färskt varje dag - serveras från kl. 07:00</p>
+            <ul class="bakverk-list">
+                <li>Kannelbullar - 25 kr/st</li>
+                <li>Chokladcroissant - 35 kr/st</li>
+                <li>Blåbärsmuffins - 30 kr/st</li>
+                <li>Smörgås med pålägg - 55 kr/st</li>
 
-        </p>
-        <ol>
-            <li>kaffe-35kr</li>
-            <li>Cappuccino-45kr</li>
-            <li>Te (olika sorter)-30kr</li>
-            <li>Varm choklad-40kr</li>
-        </ol>
-    </section>
+            </ul>
+        </section>
+        
+        <section id="oppettider">
+            <h2>Öppettider</h2>
+            <ul class="hours-list">
+                <li>Måndag-Fredag: 07:00 - 18:00</li>
+                <li>Lördag 08:00 - 16:00</li>
+                <li>Söndag: 09:00 - 15:00</li>
+            </ul>
+            <p>Vi är öppet alla dagar året runt förutom midsommar, julafton och nyårsafton.</p>
 
-</main>
+        </section>
+    </main>
+ </body>
