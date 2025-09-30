@@ -14,11 +14,11 @@
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
         color: #333;
-        background-color: #f9f6f1;  
+        background-color: #e8d5c4;  
     }
     header{
-        background-color: #8b5e3c ;
-        color: #fff;
+        background-color: #8b5a3c ;
+       
         padding: 1rem;
     }
     .nav-header nav ul {
@@ -32,12 +32,13 @@
         color: #fff;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
+        font-size: 1.1rem;
     }
     
     
     main {
         padding: 2rem;
-        max-width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -45,48 +46,90 @@
     }
     section {
         padding: 2rem;
-        background:none;
+        background-color: #e8d5c4;
        
     }
     section h2 {
-        font-size: 1,5rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
-        color: #8b5e3c;
+        color: #8b4423;
+        font-weight: normal;
     }
-    .menu-list li, .bakverk-list li {
-        list-style: none;
-        margin-bottom: 0.5rem;
+    section h3 {
+        font-size: 1.8rem;
+        color: #a0522d;
+        margin-bottom: 1rem;
+        font-weight: normal;
     }
-    .menu-list, .bakverk-list .hours-list {
-        margin-top: 0.5rem;
+    .subtitle {
+        font-size: italic;
+        color: #6b4423;
+        margin-bottom: 1rem;
+    
+    }
+    section p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+    ul {
         list-style: none;
         padding-left: 0;
+    }
+    .menu-list li, .bakverk-list li {
+       
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+    .menu-list, .bakverk-list .hours-list {
+        margin: 2rem;
+       
 
     }
+    .hours-list li {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    .divider {
+        border: none;
+        border-top: 2px solid #8b5a3c;
+        margin: 3rem;
+    }
+    
     footer {
-        background-color: #8b5e3c;
-        padding: 1rem;
+        background-color: #8b5a3c;
+        padding: 3rem;
         color: #fff;
         text-align: center;
 
+    }
+    footer h2 {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+
+    }
+    footer p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
     footer a {
         color: #fff;
         text-decoration: none;
     }
+
     #valkommen {
   text-align: center;
   padding: 5rem 1rem;
-  background-color: #f0d9b5; /* ljus beige som i exemplet */
-}
+  background-color: #e8d5c4; 
+    }
 #valkommen h1 {
   font-size: 3rem;
-  color: #8b5e3c;
+  color: #8b5a3c;
+  margin-bottom: 3rem;
+  font-weight: normal;
 }
-#valkommen p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
+
 
 
 
@@ -107,13 +150,12 @@
     </header>
     <section id="valkommen">
         <h1>Café Mysigt</h1>
-      
-      
+        <h2>om oss</h2>
+        <p>Välkommen till Cafe Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat färdigbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär och vänlig service.</p>
+    </section>    
+    <hr class="divider">      
     <main>
-        <section id="om-oss">
-            <h2>Om oss</h2>
-            <p>Välkommen till Cafe Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat färdigbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär och vänlig service.</p>
-        </section>
+       
 
         <section id="meny">
             <h2>Vår Meny - Drycker</h2>
@@ -124,6 +166,7 @@
                 <li>Varm choklad - 40Kr</li>
             </ul>    
         </section>
+        <hr class="divider">
         
         <section id="bakverk">
             <h2>Färskt från bageriet - bakverk</h2>
@@ -136,7 +179,8 @@
 
             </ul>
         </section>
-        
+        <hr class="divider">
+
         <section id="oppettider">
             <h2>Öppettider</h2>
             <ul class="hours-list">
@@ -147,15 +191,16 @@
             <p>Vi är öppet alla dagar året runt förutom midsommar, julafton och nyårsafton.</p>
 
         </section>
+        <hr class="divider">
       
    
    
-         <section id="kontakta-oss">
+         <footer id="kontakta-oss">
             <h2> kontakt och hitta hit</h2>
             <p>Storgatan 42, 114 55 Stockholm</p>
             <p><a href="tel:081234567">08-123 45 67</a></p>
             <p><a href="mailto:info@cafemysigt.se">info@cafemysigt.se</a></p>
-        </section>  
+         </footer>  
     </main>
    
  </body>
