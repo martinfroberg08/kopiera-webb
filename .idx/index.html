@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
  <head>
-   <meta charset="U TF-8">
+   <meta charset="UTF-8">
 <title>Café Mysigt</title>
 <style>
-    {
+    *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -14,7 +14,7 @@
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
         color: #333;
-        background-color: #f9f9f9;  
+        background-color: #f9f6f1;  
     }
     header{
         background-color: #8b5e3c ;
@@ -25,7 +25,7 @@
         list-style: none;
         display: flex;
        gap: 2rem;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .nav-header a {
@@ -33,9 +33,8 @@
         text-decoration: none;
         transition: color 0.3s ease-in-out;
     }
-    .nav-header a:hover {
-        color: #f0d9b5;
-    }
+    
+    
     main {
         padding: 2rem;
         max-width: 800px;
@@ -45,13 +44,12 @@
         gap: 2rem;
     }
     section {
-        background: #fff;
         padding: 2rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background:none;
+       
     }
     section h2 {
-        font-size: 2rem;
+        font-size: 1,5rem;
         margin-bottom: 1rem;
         color: #8b5e3c;
     }
@@ -60,7 +58,7 @@
         margin-bottom: 0.5rem;
     }
     .menu-list, .bakverk-list .hours-list {
-        margin-top: o,5rem;
+        margin-top: 0.5rem;
         list-style: none;
         padding-left: 0;
 
@@ -76,23 +74,41 @@
         color: #fff;
         text-decoration: none;
     }
+    #valkommen {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #f0d9b5; /* ljus beige som i exemplet */
+}
+#valkommen h1 {
+  font-size: 3rem;
+  color: #8b5e3c;
+}
+#valkommen p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
 
 
 
 </style>
  </head>
  <body>
-    <heder class-"nav-header">
+    <header class="nav-header">
         <nav aria-label="Huvudmeny">
         <ul>
-            <li><a href="#om-oss">Om #om-oss</a></li>
-            <li><a href="#meny"></a>Meny</li>
-            <li><a href="#bakverk"></a>bakverk</li>
-            <li><a href="oppettider"></a>Öppettider</li>
+            <li><a href="#om-oss">Om oss</a></li>
+            <li><a href="#meny">Meny</a></li>
+            <li><a href="#bakverk">bakverk</a></li>
+            <li><a href="#oppettider">Öppettider</a></li>
             <li><a href="#kontakta-oss">kontakt</a></li>
         </ul>
         </nav>
-    </heder>
+    </header>
+    <section id="valkommen">
+        <h1>Café Mysigt</h1>
+      
+      
     <main>
         <section id="om-oss">
             <h2>Om oss</h2>
@@ -106,6 +122,7 @@
                 <li>Cappuccino - 45Kr</li>
                 <li>Te (olika sorter) - 30 kr</li>
                 <li>Varm choklad - 40Kr</li>
+            </ul>    
         </section>
         
         <section id="bakverk">
@@ -130,5 +147,15 @@
             <p>Vi är öppet alla dagar året runt förutom midsommar, julafton och nyårsafton.</p>
 
         </section>
+      
+   
+   
+         <section id="kontakta-oss">
+            <h2> kontakt och hitta hit</h2>
+            <p>Storgatan 42, 114 55 Stockholm</p>
+            <p><a href="tel:081234567">08-123 45 67</a></p>
+            <p><a href="mailto:info@cafemysigt.se">info@cafemysigt.se</a></p>
+        </section>  
     </main>
+   
  </body>
